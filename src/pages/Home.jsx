@@ -1,4 +1,5 @@
 import MovieCard from "../components/MovieCard";
+import Footer from "../components/Footer";
 import { useState, useEffect } from "react";
 import { searchMovies, getPopularMovies } from "../services/api";
 import "../css/Home.css";
@@ -89,6 +90,7 @@ const Home = () => {
           ))}
         </div>
       )}
+      <Footer />
     </div>
   );
 };
